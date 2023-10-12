@@ -53,7 +53,7 @@ class UpdatingEventHandler(PatternMatchingEventHandler):
             "member_pw": "1234",
         } 
 
-        res = requests.post("https://mw1server.mw-train.net/local_uploader/upload", data=data, files=payload, verify=False)
+        res = requests.post("https://test.mediwhale.net/local_uploader/upload", data=data, files=payload, verify=False)
 
         print(res.status_code)
         print(res.json())
